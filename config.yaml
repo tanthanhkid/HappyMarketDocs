@@ -1,0 +1,169 @@
+baseURL: 'https://happymarketdocs.com'
+languageCode: 'vi-VN'
+title: 'Wiki - Tài liệu Nhượng quyền Kinh doanh'
+theme: 'happymarket-theme'
+defaultContentLanguage: 'vi'
+defaultContentLanguageInSubdir: false
+
+# Cấu hình build
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableRobotsTXT: true
+enableGitInfo: true
+
+# Cấu hình menu
+menu:
+  main:
+    - identifier: home
+      name: Trang chủ
+      url: /
+      weight: 10
+    - identifier: getting-started
+      name: Bắt đầu
+      url: /getting-started/
+      weight: 20
+
+# Cấu hình taxonomy
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+# Cấu hình markdown
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: 'github'
+    lineNos: true
+    lineNumbersInTable: true
+    noClasses: false
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: true
+
+# Cấu hình params
+params:
+  description: 'Tài liệu toàn diện về nhượng quyền kinh doanh tại Việt Nam. Hướng dẫn chi tiết từ A-Z về franchise, mô hình kinh doanh, pháp lý và vận hành.'
+  author: 'HappyMarket Team'
+  version: '1.0.0'
+  keywords: ['nhượng quyền', 'franchise', 'kinh doanh', 'khởi nghiệp', 'thương hiệu', 'Việt Nam']
+  
+  # Cấu hình theme
+  theme:
+    primary_color: '#FF9900'      # AWS Orange
+    secondary_color: '#232F3E'    # AWS Dark Blue
+    accent_color: '#146EB4'       # AWS Blue
+    success_color: '#00A651'      # Green
+    warning_color: '#FFB000'      # Yellow
+    error_color: '#D13212'        # Red
+    text_color: '#16191F'         # Dark text
+    background_color: '#FFFFFF'   # White background
+    
+  # Cấu hình layout
+  layout:
+    sidebar: true
+    breadcrumbs: true
+    table_of_contents: true
+    back_to_top: true
+    print_friendly: true
+    
+  # Cấu hình search
+  search:
+    enable: true
+    type: 'fuse'
+    placeholder: 'Tìm kiếm trong tài liệu...'
+    max_results: 20
+    
+  # Cấu hình social
+  social:
+    github: 'https://github.com/happymarket/docs'
+    linkedin: 'https://linkedin.com/company/happymarket'
+    facebook: 'https://facebook.com/happymarket'
+    twitter: 'https://twitter.com/happymarket'
+    youtube: 'https://youtube.com/happymarket'
+    
+  # Cấu hình analytics
+  analytics:
+    google_analytics: 'GA_MEASUREMENT_ID'
+    google_tag_manager: 'GTM_ID'
+    
+  # Cấu hình comments
+  comments:
+    enable: false
+    type: 'disqus'
+    shortname: 'happymarketdocs'
+    
+  # Cấu hình contact
+  contact:
+    email: 'docs@happymarket.com'
+    phone: '+84 123 456 789'
+    address: 'Hà Nội, Việt Nam'
+    
+  # Cấu hình features
+  features:
+    dark_mode: true
+    print_mode: true
+    full_screen: true
+    copy_code: true
+    edit_page: true
+    last_modified: true
+    reading_time: true
+    word_count: true
+    
+  # Cấu hình navigation
+  navigation:
+    show_categories: true
+    show_tags: true
+    show_series: true
+    show_related: true
+    related_count: 5
+    
+  # Cấu hình footer
+  footer:
+    show_copyright: true
+    show_links: true
+    show_social: true
+    show_newsletter: true
+
+# Cấu hình output formats
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  page:
+    - HTML
+  section:
+    - HTML
+    - RSS
+  taxonomy:
+    - HTML
+    - RSS
+
+# Cấu hình permalinks
+permalinks:
+  post: '/:year/:month/:day/:slug/'
+  page: '/:slug/'
+  section: '/:slug/'
+  taxonomy: '/:slug/'
+  taxonomyTerm: '/:slug/'
+
+# Cấu hình sitemap
+sitemap:
+  changefreq: 'monthly'
+  priority: 0.5
+  filename: 'sitemap.xml'
+
+# Cấu hình robots.txt
+robotsTXT:
+  userAgent: '*'
+  allow:
+    - '/'
+  disallow:
+    - '/admin/'
+    - '/private/'
+  sitemap: 'https://happymarketdocs.com/sitemap.xml'
