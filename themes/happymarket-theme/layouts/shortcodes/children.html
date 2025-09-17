@@ -1,0 +1,20 @@
+{{- $page := .Page -}}
+{{- $pages := $page.Pages -}}
+
+{{- if $pages -}}
+<div class="children-list">
+  {{- range $pages -}}
+    <div class="child-item">
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      {{- if .Description -}}
+        <p class="description">{{ .Description }}</p>
+      {{- end -}}
+      {{- if .Params.weight -}}
+        <span class="weight">Thứ tự: {{ .Params.weight }}</span>
+      {{- end -}}
+    </div>
+  {{- end -}}
+</div>
+{{- else -}}
+<p>Chưa có nội dung con nào.</p>
+{{- end -}}
