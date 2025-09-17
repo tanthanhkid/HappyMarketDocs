@@ -1,7 +1,7 @@
 {
   "name": "happymarketdocs",
   "version": "1.0.0",
-  "description": "Tài liệu toàn diện về nhượng quyền kinh doanh tại Việt Nam",
+  "description": "Tài liệu toàn diện về phát triển nội tâm, huấn luyện tư vấn và phát triển bản thân",
   "main": "index.js",
   "scripts": {
     "dev": "hugo server -D --disableFastRender",
@@ -17,9 +17,10 @@
     "serve": "hugo server -D --bind 0.0.0.0 --baseURL http://localhost:1313"
   },
   "keywords": [
-    "franchise",
-    "nhượng quyền",
-    "kinh doanh",
+    "phát triển nội tâm",
+    "huấn luyện",
+    "tư vấn",
+    "phát triển bản thân",
     "tài liệu",
     "hugo",
     "documentation",

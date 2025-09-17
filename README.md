@@ -1,12 +1,12 @@
-# Wiki - Tài liệu Nhượng quyền Kinh doanh
+# HappyMarketDocs - Phát triển Nội tâm & Huấn luyện
 
 ## 📋 Tổng quan
 
-**Wiki** là một trang web documentation chuyên nghiệp về chủ đề nhượng quyền kinh doanh, được xây dựng trên nền tảng Hugo framework với thiết kế tương tự AWS Documentation. Trang web cung cấp tài liệu toàn diện, dễ tìm kiếm và thân thiện với người dùng về các khía cạnh của nhượng quyền kinh doanh.
+**HappyMarketDocs** là một trang web documentation chuyên nghiệp về phát triển nội tâm, huấn luyện tư vấn và phát triển bản thân, được xây dựng trên nền tảng Hugo framework với thiết kế tương tự AWS Documentation. Trang web cung cấp tài liệu toàn diện, dễ tìm kiếm và thân thiện với người dùng về các khía cạnh của phát triển nội tâm và huấn luyện.
 
 ## 🎯 Mục tiêu
 
-- Tạo ra một nguồn tài liệu tập trung về nhượng quyền kinh doanh bằng tiếng Việt
+- Tạo ra một nguồn tài liệu tập trung về phát triển nội tâm và huấn luyện bằng tiếng Việt
 - Cung cấp giao diện người dùng hiện đại, dễ sử dụng như AWS Docs
 - Hỗ trợ tìm kiếm nhanh chóng và điều hướng trực quan
 - Responsive design hoạt động tốt trên mọi thiết bị
@@ -23,17 +23,14 @@
 ## 📁 Cấu trúc dự án
 
 ```
-Wiki/
+HappyMarketDocs/
 ├── content/                    # Nội dung tài liệu
 │   ├── _index.md              # Trang chủ
-│   ├── getting-started/       # Bắt đầu với nhượng quyền
-│   ├── business-models/       # Các mô hình kinh doanh
-│   ├── legal-aspects/         # Khía cạnh pháp lý
-│   ├── financial-planning/    # Lập kế hoạch tài chính
-│   ├── marketing-strategies/  # Chiến lược marketing
-│   ├── operations/            # Vận hành
-│   ├── case-studies/          # Nghiên cứu tình huống
-│   └── resources/             # Tài nguyên bổ sung
+│   ├── KHAI-NIEM-NGUON/       # Khái niệm nguồn
+│   ├── KHOA-HOC/              # Khóa học phát triển bản thân
+│   ├── TU-KHAINIEM/           # Từ - khái niệm chuyên môn
+│   ├── HINH/                  # Tài liệu hình ảnh
+│   └── BAI-HOC/               # Bài học
 ├── static/                    # Tài nguyên tĩnh
 │   ├── images/               # Hình ảnh
 │   ├── pdfs/                 # Tài liệu PDF
@@ -95,41 +92,35 @@ Mở trình duyệt và truy cập: `http://localhost:1313`
 
 ### Các chủ đề chính
 
-1. **Bắt đầu với nhượng quyền**
-   - Nhượng quyền là gì?
-   - Lợi ích và rủi ro
-   - Các loại hình nhượng quyền
-   - Quy trình đăng ký
+1. **Khái niệm nguồn**
+   - Quy luật (5 khái niệm)
+   - Nguyên lý (4 khái niệm)
+   - Công thức (4 khái niệm)
+   - Năng lực (11 khái niệm)
+   - Phương pháp (3 khái niệm)
+   - Nguyên tắc (4 khái niệm)
+   - Quan niệm (9 khái niệm)
+   - Tâm thái (5 khái niệm)
+   - Hệ quy chiếu (4 khái niệm)
+   - Môi trường (9 khái niệm)
+   - Công cụ phương tiện (3 khái niệm)
+   - Văn hoá nghi thức nghi lễ (7 khái niệm)
 
-2. **Mô hình kinh doanh**
-   - Franchise truyền thống
-   - Master franchise
-   - Area development
-   - Multi-unit franchise
+2. **Khóa học phát triển bản thân**
+   - Nội tâm: Thấu hiểu nội tâm, 7 Bố thí quan trọng
+   - Sức khỏe: Thấu hiểu sức khỏe, tư duy, hành trình 21 ngày
+   - Mối quan hệ: Thấu hiểu yêu thương, nhận thức về con người
+   - Tài chính: Thấu hiểu tài chính, kinh doanh, đầu tư
 
-3. **Khía cạnh pháp lý**
-   - Hợp đồng nhượng quyền
-   - Quy định pháp luật Việt Nam
-   - Bảo vệ thương hiệu
-   - Giải quyết tranh chấp
+3. **Từ - Khái niệm chuyên môn**
+   - KNN Nội tâm: 65 từ/khái niệm chuyên sâu
+   - Định nghĩa và giải thích chi tiết
+   - Thuật ngữ chuyên môn
 
-4. **Lập kế hoạch tài chính**
-   - Chi phí đầu tư ban đầu
-   - Phí nhượng quyền
-   - Dự báo doanh thu
-   - Quản lý dòng tiền
-
-5. **Chiến lược marketing**
-   - Xây dựng thương hiệu
-   - Marketing địa phương
-   - Digital marketing
-   - Quan hệ công chúng
-
-6. **Vận hành**
-   - Quản lý nhân sự
-   - Hệ thống báo cáo
-   - Đào tạo nhân viên
-   - Kiểm soát chất lượng
+4. **Tài liệu hình ảnh**
+   - Hình ảnh minh họa trực quan
+   - Đồ họa thông tin
+   - Sơ đồ và biểu đồ
 
 ## 🎨 Tính năng giao diện
 
@@ -150,11 +141,11 @@ Mở trình duyệt và truy cập: `http://localhost:1313`
 ```yaml
 baseURL: 'https://happymarketdocs.com'
 languageCode: 'vi-VN'
-title: 'HappyMarketDocs - Tài liệu Nhượng quyền Kinh doanh'
+title: 'HappyMarketDocs - Phát triển Nội tâm & Huấn luyện'
 theme: 'happymarket-theme'
 
 params:
-  description: 'Tài liệu toàn diện về nhượng quyền kinh doanh tại Việt Nam'
+  description: 'Tài liệu toàn diện về phát triển nội tâm, huấn luyện tư vấn và phát triển bản thân'
   author: 'HappyMarket Team'
   version: '1.0.0'
   
@@ -253,4 +244,4 @@ Dự án này được phát hành dưới [MIT License](LICENSE).
 
 ---
 
-**Wiki** - Nơi kiến thức nhượng quyền được chia sẻ và phát triển! 🚀
+**HappyMarketDocs** - Nơi kiến thức phát triển nội tâm được chia sẻ và phát triển! 🚀

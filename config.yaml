@@ -1,6 +1,6 @@
 baseURL: 'https://happymarketdocs.com'
 languageCode: 'vi-VN'
-title: 'Wiki - Tài liệu Nhượng quyền Kinh doanh'
+title: 'HappyMarketDocs - Phát triển Nội tâm & Huấn luyện'
 theme: 'happymarket-theme'
 defaultContentLanguage: 'vi'
 defaultContentLanguageInSubdir: false
@@ -35,10 +35,6 @@ menu:
       name: Hình ảnh
       url: /hinh/
       weight: 50
-    - identifier: bai-hoc
-      name: Bài học
-      url: /bai-hoc/
-      weight: 60
 
 # Cấu hình taxonomy
 taxonomies:
@@ -63,10 +59,10 @@ markup:
 
 # Cấu hình params
 params:
-  description: 'Tài liệu toàn diện về nhượng quyền kinh doanh tại Việt Nam. Hướng dẫn chi tiết từ A-Z về franchise, mô hình kinh doanh, pháp lý và vận hành.'
+  description: 'Tài liệu toàn diện về phát triển nội tâm, huấn luyện tư vấn và phát triển bản thân. Kiến thức chuyên sâu từ A-Z để phát triển toàn diện và thành công trong cuộc sống.'
   author: 'HappyMarket Team'
   version: '1.0.0'
-  keywords: ['nhượng quyền', 'franchise', 'kinh doanh', 'khởi nghiệp', 'thương hiệu', 'Việt Nam']
+  keywords: ['phát triển nội tâm', 'huấn luyện', 'tư vấn', 'phát triển bản thân', 'nội tâm', 'tâm lý học', 'Việt Nam']
   
   # Cấu hình theme
   theme:
