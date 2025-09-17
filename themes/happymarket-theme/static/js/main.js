@@ -1,4 +1,4 @@
-// Main JavaScript for HappyMarketDocs theme
+// Main JavaScript for WikiW theme
 
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle

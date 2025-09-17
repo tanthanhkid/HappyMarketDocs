@@ -15,7 +15,7 @@ tableOfContents: false
 
 1. [Bắt đầu ngay hôm nay](#bắt-đầu-ngay-hôm-nay)
 2. [Tài liệu chính](#tài-liệu-chính)
-3. [Tại sao chọn HappyMarketDocs?](#tại-sao-chọn-happymarketdocs)
+3. [Tại sao chọn WikiW?](#tại-sao-chọn-wikiw)
 4. [Đối tượng độc giả](#đối-tượng-độc-giả)
 5. [Thống kê](#thống-kê)
 6. [Đóng góp](#đóng-góp)
