@@ -1,8 +1,81 @@
 {{ if .TableOfContents }}
 <div class="mb-6">
     <h3 class="text-sm font-semibold text-gray-900 mb-3">📋 Mục lục</h3>
-    <div class="text-sm text-gray-700">
+    <div class="toc-container text-sm text-gray-700">
         {{ .TableOfContents }}
     </div>
 </div>
+
+<style>
+.toc-container ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.toc-container li {
+    margin: 0;
+    padding: 0;
+}
+
+.toc-container a {
+    display: block;
+    padding: 4px 8px;
+    color: #374151;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.toc-container a:hover {
+    background-color: #f3f4f6;
+    color: #f97316;
+}
+
+/* Cấp 1 (H2) */
+.toc-container > ul > li > a {
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 2px;
+}
+
+/* Cấp 2 (H3) */
+.toc-container > ul > li > ul > li > a {
+    padding-left: 16px;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 1px;
+}
+
+/* Cấp 3 (H4) */
+.toc-container > ul > li > ul > li > ul > li > a {
+    padding-left: 32px;
+    font-weight: 400;
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+/* Cấp 4 (H5) */
+.toc-container > ul > li > ul > li > ul > li > ul > li > a {
+    padding-left: 48px;
+    font-weight: 400;
+    color: #9ca3af;
+    font-size: 0.8rem;
+}
+
+/* Cấp 5 (H6) */
+.toc-container > ul > li > ul > li > ul > li > ul > li > ul > li > a {
+    padding-left: 64px;
+    font-weight: 400;
+    color: #d1d5db;
+    font-size: 0.75rem;
+}
+
+/* Active state */
+.toc-container a.active {
+    background-color: #fef3c7;
+    color: #f97316;
+    font-weight: 600;
+}
+</style>
 {{ end }}

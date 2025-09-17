@@ -62,7 +62,7 @@ Quản lý tài chính, phát triển kinh doanh và đầu tư
 
 ## 🚀 Lộ trình học tập khuyến nghị
 
-### Giai đoạn 1: Nền tảng (2-3 tháng)
+### Giai đoạn 1: Nền tảng (2-3 tháng).
 1. **WNT1** - Thấu hiểu nội tâm
 2. **WSK1** - Thấu hiểu sức khỏe
 3. **WQH1** - Thấu hiểu yêu thương

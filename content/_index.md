@@ -4,7 +4,7 @@ description: "Tài liệu toàn diện về nhượng quyền kinh doanh tại V
 date: 2024-01-01
 draft: false
 type: "page"
-tableOfContents: false
+tableOfContents: true
 ---
 
 # Chào mừng đến với Wiki
