@@ -1,43 +1,55 @@
 ---
 title: "Trang chủ"
-description: "Tài liệu toàn diện về nhượng quyền kinh doanh tại Việt Nam"
+description: "Tài liệu toàn diện về phát triển nội tâm và huấn luyện tư vấn"
 date: 2024-01-01
 draft: false
 type: "page"
 tableOfContents: true
 ---
 
-# Chào mừng đến với Wiki
+# Chào mừng đến với HappyMarketDocs
 
-**Wiki** là nguồn tài liệu toàn diện và đáng tin cậy về nhượng quyền kinh doanh tại Việt Nam. Chúng tôi cung cấp hướng dẫn chi tiết từ A-Z để giúp bạn hiểu rõ và thành công trong lĩnh vực franchise.
+**HappyMarketDocs** là nguồn tài liệu toàn diện và đáng tin cậy về phát triển nội tâm, huấn luyện tư vấn và phát triển bản thân. Chúng tôi cung cấp kiến thức chuyên sâu từ A-Z để giúp bạn phát triển toàn diện và thành công trong cuộc sống.
 
 ## 📋 Mục lục chính
 
 1. [Bắt đầu ngay hôm nay](#bắt-đầu-ngay-hôm-nay)
 2. [Tài liệu chính](#tài-liệu-chính)
-3. [Tại sao chọn WikiW?](#tại-sao-chọn-wikiw)
+3. [Tại sao chọn HappyMarketDocs?](#tại-sao-chọn-happymarketdocs)
 4. [Đối tượng độc giả](#đối-tượng-độc-giả)
 5. [Thống kê](#thống-kê)
 6. [Đóng góp](#đóng-góp)
 
 ## 🚀 Bắt đầu ngay hôm nay
 
-Dù bạn là người mới bắt đầu tìm hiểu về nhượng quyền hay đã có kinh nghiệm, chúng tôi có tài liệu phù hợp cho mọi cấp độ:
+Dù bạn là người mới bắt đầu hành trình phát triển bản thân hay đã có kinh nghiệm, chúng tôi có tài liệu phù hợp cho mọi cấp độ:
 
 ### 📚 Tài liệu chính
 
-- **[Bắt đầu với nhượng quyền](/getting-started/)** - Hướng dẫn cơ bản từ A-Z
-  - [Nhượng quyền là gì?](/getting-started/what-is-franchising/) - Khái niệm cơ bản
-  - [Lợi ích và rủi ro](/getting-started/benefits-and-risks/) - Phân tích ưu nhược điểm
-  - [Các loại hình nhượng quyền](/getting-started/types-of-franchising/) - Mô hình phổ biến
+- **[Khái niệm nguồn](/khai-niem-nguon/)** - Bộ khái niệm cốt lõi cho tư vấn & huấn luyện nội tâm
+  - [Quy luật](/khai-niem-nguon/quy-luật/) - 5 quy luật cơ bản
+  - [Nguyên lý](/khai-niem-nguon/nguyên-lý/) - 4 nguyên lý nền tảng
+  - [Công thức](/khai-niem-nguon/công-thức/) - 4 công thức thực hành
+  - [Năng lực](/khai-niem-nguon/năng-lực/) - 11 năng lực cần thiết
 
-## 💡 Tại sao chọn Wiki?
+- **[Khóa học](/khoa-hoc/)** - Các khóa học phát triển bản thân toàn diện
+  - [Nội tâm](/khoa-hoc/noi-tam/) - Phát triển bản thân từ bên trong
+  - [Sức khỏe](/khoa-hoc/suc-khoe/) - Chăm sóc và nâng cao sức khỏe
+  - [Mối quan hệ](/khoa-hoc/moi-quan-he/) - Xây dựng mối quan hệ tích cực
+  - [Tài chính](/khoa-hoc/tai-chinh/) - Quản lý tài chính và kinh doanh
+
+- **[Từ - Khái niệm](/tu-khainiem/)** - Danh mục từ và khái niệm chuyên môn
+  - [KNN Nội tâm](/tu-khainiem/knn-nội-tâm/) - 65 từ/khái niệm chuyên sâu
+
+- **[Hình ảnh](/hinh/)** - Tài liệu hình ảnh minh họa và trực quan
+
+## 💡 Tại sao chọn HappyMarketDocs?
 
 ### ✅ Nội dung chuyên sâu
-Tài liệu được biên soạn bởi các chuyên gia có kinh nghiệm thực tế trong lĩnh vực nhượng quyền tại Việt Nam.
+Tài liệu được biên soạn bởi các chuyên gia có kinh nghiệm thực tế trong lĩnh vực tư vấn và huấn luyện nội tâm.
 
-### ✅ Cập nhật thường xuyên
-Nội dung được cập nhật liên tục theo các thay đổi về pháp luật và thị trường.
+### ✅ Phương pháp khoa học
+Áp dụng các phương pháp và nguyên lý đã được kiểm chứng trong thực tế.
 
 ### ✅ Dễ sử dụng
 Giao diện thân thiện, tìm kiếm nhanh chóng và điều hướng trực quan.
@@ -47,16 +59,17 @@ Tất cả tài liệu đều miễn phí và có thể truy cập mọi lúc, m
 
 ## 🎯 Đối tượng độc giả
 
-- **Người muốn mua franchise** - Tìm hiểu cách chọn lựa và đầu tư
-- **Chủ thương hiệu** - Hướng dẫn mở rộng hệ thống nhượng quyền
-- **Nhà tư vấn** - Tài liệu tham khảo chuyên nghiệp
+- **Chuyên gia tư vấn** - Tài liệu tham khảo chuyên nghiệp
+- **Huấn luyện viên** - Hướng dẫn phương pháp và kỹ năng
+- **Người muốn phát triển bản thân** - Tìm hiểu cách cải thiện cuộc sống
 - **Sinh viên và nghiên cứu** - Nguồn tài liệu học tập
-- **Nhà đầu tư** - Thông tin để đánh giá cơ hội
+- **Nhà trị liệu** - Thông tin để hỗ trợ khách hàng
 
 ## 📈 Thống kê
 
-- **3** bài viết cơ bản
-- **1** chủ đề chính
+- **100+** khái niệm và từ chuyên môn
+- **4** nhóm khóa học chính
+- **15** nhóm khái niệm nguồn
 - **Nội dung tập trung** và dễ hiểu
 - **Hướng dẫn từng bước** chi tiết
 
@@ -70,4 +83,4 @@ Chúng tôi hoan nghênh mọi đóng góp để cải thiện tài liệu. Hãy
 
 ---
 
-**Bắt đầu hành trình nhượng quyền của bạn ngay hôm nay!** 🚀
+**Bắt đầu hành trình phát triển nội tâm của bạn ngay hôm nay!** 🚀
