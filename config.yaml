@@ -19,10 +19,26 @@ menu:
       name: Trang chủ
       url: /
       weight: 10
-    - identifier: getting-started
-      name: Bắt đầu
-      url: /getting-started/
+    - identifier: khoa-hoc
+      name: Khóa học
+      url: /khoa-hoc/
       weight: 20
+    - identifier: khai-niem-nguon
+      name: Khái niệm nguồn
+      url: /khai-niem-nguon/
+      weight: 30
+    - identifier: tu-khainiem
+      name: Từ - Khái niệm
+      url: /tu-khainiem/
+      weight: 40
+    - identifier: hinh
+      name: Hình ảnh
+      url: /hinh/
+      weight: 50
+    - identifier: bai-hoc
+      name: Bài học
+      url: /bai-hoc/
+      weight: 60
 
 # Cấu hình taxonomy
 taxonomies:
