@@ -129,10 +129,60 @@ Tổng cộng có **${lessons.length}** bài học được tạo từ Admin Pan
 }
 
 /**
+ * Tạo sidebar table of contents cho Hugo
+ */
+function generateSidebarToc(lessons) {
+    if (lessons.length === 0) {
+        return [];
+    }
+    
+    const sidebarItems = [
+        {
+            name: "Mục lục",
+            url: "#mục-lục",
+            weight: 1
+        },
+        {
+            name: "Nguồn kiến thức", 
+            url: "#nguồn-kiến-thức",
+            weight: 2
+        },
+        {
+            name: "Cách sử dụng",
+            url: "#cách-sử-dụng", 
+            weight: 3
+        },
+        {
+            name: "Cập nhật",
+            url: "#cập-nhật",
+            weight: 4
+        },
+        {
+            name: "Danh sách bài học",
+            url: "#danh-sách-bài-học",
+            weight: 5
+        }
+    ];
+    
+    // Thêm danh sách bài học vào sidebar
+    lessons.forEach((lesson, index) => {
+        sidebarItems.push({
+            name: lesson.title,
+            url: `/bai-hoc/${lesson.slug}/`,
+            weight: 10 + index,
+            parent: "Danh sách bài học"
+        });
+    });
+    
+    return sidebarItems;
+}
+
+/**
  * Cập nhật file _index.md với mục lục mới
  */
 async function updateIndexFile(lessons) {
     const toc = generateTableOfContents(lessons);
+    const sidebarToc = generateSidebarToc(lessons);
     
     const currentContent = await fs.readFile(INDEX_FILE, 'utf8');
     
@@ -149,8 +199,63 @@ async function updateIndexFile(lessons) {
         newContent = currentContent + '\n\n' + toc;
     }
     
+    // Cập nhật frontmatter với sidebar table of contents
+    newContent = updateFrontmatterWithSidebar(newContent, sidebarToc);
+    
     await fs.writeFile(INDEX_FILE, newContent, 'utf8');
     console.log(`✅ Đã cập nhật mục lục BAI-HOC với ${lessons.length} bài học`);
+}
+
+/**
+ * Cập nhật frontmatter với sidebar table of contents
+ */
+function updateFrontmatterWithSidebar(content, sidebarToc) {
+    // Tìm frontmatter
+    const frontmatterMatch = content.match(/^---\n([\s\S]*?)\n---/);
+    if (!frontmatterMatch) return content;
+    
+    const frontmatterText = frontmatterMatch[1];
+    const frontmatter = {};
+    
+    // Parse frontmatter hiện tại
+    frontmatterText.split('\n').forEach(line => {
+        const match = line.match(/^(\w+):\s*(.*)$/);
+        if (match) {
+            let value = match[2].trim();
+            if (value.startsWith('"') && value.endsWith('"')) {
+                value = value.slice(1, -1);
+            }
+            frontmatter[match[1]] = value;
+        }
+    });
+    
+    // Thêm sidebar table of contents
+    frontmatter.sidebar = {
+        tableOfContents: sidebarToc
+    };
+    
+    // Tạo frontmatter mới
+    let newFrontmatter = '---\n';
+    Object.keys(frontmatter).forEach(key => {
+        if (key === 'sidebar') {
+            newFrontmatter += `sidebar:\n`;
+            newFrontmatter += `  tableOfContents:\n`;
+            sidebarToc.forEach(item => {
+                newFrontmatter += `    - name: "${item.name}"\n`;
+                newFrontmatter += `      url: "${item.url}"\n`;
+                newFrontmatter += `      weight: ${item.weight}\n`;
+                if (item.parent) {
+                    newFrontmatter += `      parent: "${item.parent}"\n`;
+                }
+            });
+        } else {
+            newFrontmatter += `${key}: "${frontmatter[key]}"\n`;
+        }
+    });
+    newFrontmatter += '---';
+    
+    // Thay thế frontmatter cũ
+    return content.replace(/^---\n[\s\S]*?\n---/, newFrontmatter);
 }
 
 /**
@@ -188,5 +293,7 @@ if (require.main === module) {
 module.exports = {
     getAllLessons,
     updateIndexFile,
-    generateTableOfContents
+    generateTableOfContents,
+    generateSidebarToc,
+    updateFrontmatterWithSidebar
 };

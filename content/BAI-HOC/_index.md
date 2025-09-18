@@ -1,10 +1,51 @@
 ---
 title: "Bài Học"
 description: "Các bài học được tạo từ Admin Panel, kết hợp kiến thức từ nhiều nguồn"
-date: 2024-01-01
-draft: false
+date: "2024-01-01"
+draft: "false"
 type: "section"
 layout: "list"
+sidebar:
+  tableOfContents:
+    - name: "Mục lục"
+      url: "#mục-lục"
+      weight: 1
+    - name: "Nguồn kiến thức"
+      url: "#nguồn-kiến-thức"
+      weight: 2
+    - name: "Cách sử dụng"
+      url: "#cách-sử-dụng"
+      weight: 3
+    - name: "Cập nhật"
+      url: "#cập-nhật"
+      weight: 4
+    - name: "Danh sách bài học"
+      url: "#danh-sách-bài-học"
+      weight: 5
+    - name: "ádasd"
+      url: "/bai-hoc/adasd/"
+      weight: 10
+      parent: "Danh sách bài học"
+    - name: "jkhhkjh-uhkhkjh"
+      url: "/bai-hoc/jkhhkjh-uhkhkjh/"
+      weight: 11
+      parent: "Danh sách bài học"
+    - name: "jkhhkjh-uhkhkjhsadsad"
+      url: "/bai-hoc/jkhhkjh-uhkhkjhsadsad/"
+      weight: 12
+      parent: "Danh sách bài học"
+    - name: "ppppp"
+      url: "/bai-hoc/ppppp/"
+      weight: 13
+      parent: "Danh sách bài học"
+    - name: "uyugy"
+      url: "/bai-hoc/uyugy/"
+      weight: 14
+      parent: "Danh sách bài học"
+    - name: "Bài Học Mẫu - Phát Triển Nội Tâm"
+      url: "/bai-hoc/bai-hoc-mau/"
+      weight: 15
+      parent: "Danh sách bài học"
 ---
 
 # Bài Học
@@ -31,7 +72,7 @@ Các bài học được tạo mới thường xuyên từ Admin Panel, đảm b
 
 ## 📚 Danh sách bài học
 
-Tổng cộng có **5** bài học được tạo từ Admin Panel:
+Tổng cộng có **6** bài học được tạo từ Admin Panel:
 
 ### 🆕 Bài học mới nhất
 
@@ -44,10 +85,30 @@ Tổng cộng có **5** bài học được tạo từ Admin Panel:
 3. **[jkhhkjh-uhkhkjhsadsad](/bai-hoc/jkhhkjh-uhkhkjhsadsad/)** - *18/9/2025*
    Bài học được tạo từ 3 nguồn: HÌNH 9, 2. Thu Hút, QUY LUẬT THU HÚT
 
-4. **[uyugy](/bai-hoc/uyugy/)** - *18/9/2025*
+4. **[ppppp](/bai-hoc/ppppp/)** - *18/9/2025*
+   Bài học được tạo từ 3 nguồn: HÌNH 9, 2. Kích Hoạt Não, NGUYÊN LÝ KÍCH HOẠT NÃO
+
+5. **[uyugy](/bai-hoc/uyugy/)** - *18/9/2025*
    Bài học được tạo từ 3 nguồn: HÌNH 10, 2. Kích Hoạt Não, CÔNG THỨC BUÔNG ĐỊNH THÂN
 
-5. **[Bài Học Mẫu - Phát Triển Nội Tâm](/bai-hoc/bai-hoc-mau/)** - *15/1/2024*
+### 📖 Tất cả bài học
+
+1. **[ádasd](/bai-hoc/adasd/)** - *18/9/2025*
+   Bài học được tạo từ 3 nguồn: HÌNH 9, 1. Ánh Sáng, QUY LUẬT TÂM THỨC
+
+2. **[jkhhkjh-uhkhkjh](/bai-hoc/jkhhkjh-uhkhkjh/)** - *18/9/2025*
+   Bài học được tạo từ 3 nguồn: HÌNH 11, 2. Thu Hút, NGUYÊN LÝ KÍCH HOẠT NÃO
+
+3. **[jkhhkjh-uhkhkjhsadsad](/bai-hoc/jkhhkjh-uhkhkjhsadsad/)** - *18/9/2025*
+   Bài học được tạo từ 3 nguồn: HÌNH 9, 2. Thu Hút, QUY LUẬT THU HÚT
+
+4. **[ppppp](/bai-hoc/ppppp/)** - *18/9/2025*
+   Bài học được tạo từ 3 nguồn: HÌNH 9, 2. Kích Hoạt Não, NGUYÊN LÝ KÍCH HOẠT NÃO
+
+5. **[uyugy](/bai-hoc/uyugy/)** - *18/9/2025*
+   Bài học được tạo từ 3 nguồn: HÌNH 10, 2. Kích Hoạt Não, CÔNG THỨC BUÔNG ĐỊNH THÂN
+
+6. **[Bài Học Mẫu - Phát Triển Nội Tâm](/bai-hoc/bai-hoc-mau/)** - *15/1/2024*
    Bài học mẫu được tạo từ Admin Panel, kết hợp kiến thức từ 3 nguồn
 
 

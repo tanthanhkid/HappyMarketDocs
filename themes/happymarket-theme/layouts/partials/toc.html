@@ -1,10 +1,26 @@
-{{ if .TableOfContents }}
+{{ if .Params.sidebar.tableOfContents }}
+<div class="mb-6">
+    <h3 class="text-sm font-semibold text-gray-900 mb-3">📋 Mục lục</h3>
+    <div class="toc-container text-sm text-gray-700">
+        <ul>
+            {{ range .Params.sidebar.tableOfContents }}
+            <li>
+                <a href="{{ .url }}" class="toc-link {{ if .parent }}toc-child{{ end }}">
+                    {{ .name }}
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+{{ else if .TableOfContents }}
 <div class="mb-6">
     <h3 class="text-sm font-semibold text-gray-900 mb-3">📋 Mục lục</h3>
     <div class="toc-container text-sm text-gray-700">
         {{ .TableOfContents }}
     </div>
 </div>
+{{ end }}
 
 <style>
 .toc-container ul {
@@ -76,6 +92,37 @@
     background-color: #fef3c7;
     color: #f97316;
     font-weight: 600;
+}
+
+/* Custom sidebar TOC styles */
+.toc-link {
+    display: block;
+    padding: 6px 12px;
+    color: #374151;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.toc-link:hover {
+    background-color: #f3f4f6;
+    color: #f97316;
+}
+
+.toc-child {
+    padding-left: 24px;
+    font-weight: 400;
+    color: #6b7280;
+    font-size: 0.875rem;
+    border-left: 2px solid #e5e7eb;
+    margin-left: 8px;
+}
+
+.toc-child:hover {
+    background-color: #f9fafb;
+    color: #f97316;
+    border-left-color: #f97316;
 }
 </style>
 {{ end }}
