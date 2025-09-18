@@ -1,5 +1,9 @@
 const fs = require('fs').promises;
 const path = require('path');
+const { exec } = require('child_process');
+const { promisify } = require('util');
+
+const execAsync = promisify(exec);
 
 // Generate slug từ title
 function generateSlug(title) {
@@ -115,6 +119,33 @@ function validateLessonData(lessonData) {
   return errors;
 }
 
+// Cập nhật mục lục BAI-HOC tự động
+async function updateBaiHocTableOfContents() {
+  try {
+    const scriptPath = path.join(process.cwd(), 'scripts', 'update-bai-hoc-toc.js');
+    
+    // Kiểm tra xem script có tồn tại không
+    try {
+      await fs.access(scriptPath);
+    } catch (error) {
+      console.warn('Script cập nhật mục lục không tồn tại:', scriptPath);
+      return;
+    }
+    
+    // Chạy script cập nhật mục lục
+    const { stdout, stderr } = await execAsync(`node "${scriptPath}"`);
+    
+    if (stderr) {
+      console.warn('Script cập nhật mục lục có warning:', stderr);
+    }
+    
+    console.log('Đã cập nhật mục lục BAI-HOC:', stdout);
+  } catch (error) {
+    console.error('Lỗi khi cập nhật mục lục BAI-HOC:', error);
+    throw error;
+  }
+}
+
 exports.handler = async (event, context) => {
   // Set CORS headers
   const headers = {
@@ -177,6 +208,14 @@ exports.handler = async (event, context) => {
     
     // Create lesson file
     const result = await createLessonFile(slug, lessonData);
+    
+    // Cập nhật mục lục BAI-HOC tự động
+    try {
+      await updateBaiHocTableOfContents();
+    } catch (tocError) {
+      console.warn('Không thể cập nhật mục lục:', tocError.message);
+      // Không fail toàn bộ request nếu chỉ lỗi cập nhật mục lục
+    }
     
     return {
       statusCode: 200,

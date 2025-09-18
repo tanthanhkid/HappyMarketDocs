@@ -20,7 +20,9 @@
     "lint": "markdownlint content/**/*.md",
     "format": "prettier --write content/**/*.md",
     "check": "hugo --gc --minify --quiet && echo 'Build successful'",
-    "serve": "hugo server -D --bind 0.0.0.0 --baseURL http://localhost:1313"
+    "serve": "hugo server -D --bind 0.0.0.0 --baseURL http://localhost:1313",
+    "update-toc": "node scripts/update-bai-hoc-toc.js",
+    "test-toc": "node scripts/test-toc-update.js"
   },
   "keywords": [
     "phát triển nội tâm",

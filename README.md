@@ -219,6 +219,7 @@ Mở trình duyệt và truy cập: `http://localhost:1313`
 - **Real-time Preview**: Xem trước nội dung trước khi lưu
 - **File Management**: Quản lý và tải files từ API endpoints
 - **Validation**: Kiểm tra đầy đủ thông tin trước khi tạo bài học
+- **Auto Table of Contents**: Tự động cập nhật mục lục khi có bài học mới
 - **Modern UI**: Glassmorphism design với gradient backgrounds
 - **Responsive**: Hoạt động tốt trên mọi thiết bị
 
@@ -411,6 +412,33 @@ Mỗi bài học được tạo sẽ có cấu trúc:
 2. **Chọn nội dung**: Sử dụng dropdown hoặc tìm kiếm để chọn 3 nguồn
 3. **Preview**: Click "Preview" để xem nội dung ghép
 4. **Tạo bài học**: Click "Tạo Bài Học" để lưu vào `/content/BAI-HOC/`
+5. **Tự động cập nhật**: Mục lục BAI-HOC sẽ được cập nhật tự động
+
+## 🔄 Tự động cập nhật mục lục
+
+### Tính năng Auto Table of Contents
+
+Hệ thống tự động cập nhật mục lục cho danh mục BAI-HOC mỗi khi có bài học mới được tạo:
+
+#### Cách hoạt động
+1. **Tự động**: Khi tạo bài học mới qua Admin Panel, mục lục sẽ được cập nhật tự động
+2. **Thủ công**: Có thể chạy script cập nhật mục lục thủ công khi cần
+3. **Thông minh**: Hiển thị bài học mới nhất và tổng quan về tất cả bài học
+
+#### Scripts có sẵn
+```bash
+# Cập nhật mục lục thủ công
+npm run update-toc
+
+# Test tính năng cập nhật mục lục
+npm run test-toc
+```
+
+#### Cấu trúc mục lục
+- **Tổng quan**: Hiển thị số lượng bài học
+- **Bài học mới nhất**: 5 bài học được tạo gần đây nhất
+- **Danh sách đầy đủ**: Tất cả bài học được sắp xếp theo ngày tạo
+- **Thông tin chi tiết**: Tiêu đề, mô tả, ngày tạo và liên kết
 
 ## 🔌 API Endpoints
 
