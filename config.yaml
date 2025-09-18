@@ -19,6 +19,10 @@ menu:
       name: Trang chủ
       url: /
       weight: 10
+    - identifier: bai-hoc
+      name: Bài học
+      url: /bai-hoc/
+      weight: 15
     - identifier: khoa-hoc
       name: Khóa học
       url: /khoa-hoc/
